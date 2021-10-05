@@ -1,0 +1,24 @@
+{
+  "name": "12houses",
+  "version": "1.0.0",
+  "description": "[GitHub Pages](https://ivanabraz.github.io/12houses/).",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanabraz/12houses.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanabraz/12houses/issues"
+  },
+  "homepage": "https://github.com/ivanabraz/12houses#readme"
+}

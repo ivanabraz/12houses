@@ -1,0 +1,8 @@
+{  "short_name": "12houses",
+    "name": "(12)houses",
+    "description": "(12)houses, a source for daily horoscopes",
+    "icons": [
+        { "src": "img/favicon/favicon.png", "type": "image/png", "sizes": "192x192" },
+        { "src": "img/favicon/favicon.png", "type": "image/png", "sizes": "512x512" }
+    ]
+}

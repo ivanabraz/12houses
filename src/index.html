@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="(12)houses">
+
+        <!-- FAVICON -->
+
+        <link rel="icon" href="./img/favicon/favicon.ico" sizes="any"><!-- 32×32 -->
+        <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="./img/favicon/favincon.png"><!-- 180×180 -->
+        <link rel="manifest" href="manifest.webmanifest">
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!-- SWIPER -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css'>
+
+        <!-- AOS LIBRARY -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>(12)houses</title>
+    </head>
+
+
+    <body>
+        <div class="justify-content-center signBox" id="signParentContainter">
+            <div class="text-center" id="enterDate">
+                <div class="text-center mt-5">
+                    <h1 data-aos="fade-up" data-aos-duration="2000">Hi There!<br>Welcome to (12)houses</h1>
+                    <h2 data-aos="fade-up" data-aos-duration="2000">Please, enter your date of birth<br>to get your daily horoscope</h2>
+                </div>
+
+                <form class="text-center" action="" method="get" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="row justify-content-center align-items-center mt-5 mb-3">
+                        <div class="col-md-3 col-sm-3">
+                            <input type="number" class="inputs input-day" id="day" placeholder="Day*" min="1" max="31" pattern="^([1-9]|[12][0-9]|30)$" required>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <input type="number" class="inputs input-month" id="month" placeholder="Month*" min="1" max="12" pattern="([1-9]|1[0-2])" required>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn-send" type="button" id="generateSign"></button>
+                        </div>
+                    </div>
+                    <p class="enterValidDate">&nbsp;</p>
+                </form>
+
+            </div>
+            <img class="signBackgroundSun spinAnimation" src="./img/misc/misc-sun_bg.svg" data-aos="fade" data-aos-duration="2000"/>
+            <img class="signBackgroundSun" src="./img/misc/misc-sun_face.svg" data-aos="fade" data-aos-duration="2000"/>
+        </div>
+
+        <footer data-aos="fade-up" data-aos-duration="2000">
+            <a href="https://github.com/ivanabraz" target="_blank"><i class="fab fa-github-square"></i></a> <a href="https://www.linkedin.com/in/ivana-braz/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://www.behance.net/IvanaBraz" target="_blank"><i class="fab fa-behance-square"></i></a>
+        </footer>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- AOS LIBRARY -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/aos-innit.js"></script>
+
+        <!-- SCRIPTS -->
+        <script src="js/zodiacSigns.js" type="module"></script>
+        <script src="js/apiAztro.js" type="module"></script>
+        <script src="js/index.js" type="module"></script>
+        <script src="js/tryAnotherDate.js"></script>
+
+        <!-- SWIPER -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js'></script>
+
+    </body>
+
+</html>
+
