@@ -1,8 +1,5 @@
 import {zodiacSigns} from './zodiacSigns.js';
 import {aztroApiYesterday, aztroApiToday, aztroApiTomorrow} from './apiAztro.js';
-require('dotenv').config();
-
-const {API_HOST} = process.env;
 
 $(document).ready(function () {
 

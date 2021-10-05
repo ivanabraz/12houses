@@ -1,5 +1,3 @@
-const {API_HOST, API_KEY,} = process.env;
-
 // YESTERDAY
 export let aztroApiYesterday = {
     "async": true,
