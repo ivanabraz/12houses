@@ -1,4 +1,4 @@
-require('dotenv').config();
+const {API_HOST, API_KEY,} = process.env;
 
 // YESTERDAY
 export let aztroApiYesterday = {
@@ -6,8 +6,8 @@ export let aztroApiYesterday = {
     "crossDomain": true,
     "method": "POST",
     "headers": {
-        "x-rapidapi-key": process.env.API_KEY,
-        "x-rapidapi-host": process.env.API_HOST
+        "x-rapidapi-key": API_KEY,
+        "x-rapidapi-host": API_HOST
     }
 };
 
@@ -17,8 +17,8 @@ export let aztroApiToday = {
     "crossDomain": true,
     "method": "POST",
     "headers": {
-        "x-rapidapi-key": process.env.API_KEY,
-        "x-rapidapi-host": process.env.API_HOST
+        "x-rapidapi-key": API_KEY,
+        "x-rapidapi-host": API_HOST
     }
 };
 
@@ -28,7 +28,7 @@ export let aztroApiTomorrow = {
     "crossDomain": true,
     "method": "POST",
     "headers": {
-        "x-rapidapi-key": process.env.API_KEY,
-        "x-rapidapi-host": process.env.API_HOST
+        "x-rapidapi-key": API_KEY,
+        "x-rapidapi-host": API_HOST
     }
 };

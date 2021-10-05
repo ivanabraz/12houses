@@ -2,6 +2,8 @@ import {zodiacSigns} from './zodiacSigns.js';
 import {aztroApiYesterday, aztroApiToday, aztroApiTomorrow} from './apiAztro.js';
 require('dotenv').config();
 
+const {API_HOST} = process.env;
+
 $(document).ready(function () {
 
     // GENERATE SIGN FUNCTION
@@ -28,7 +30,7 @@ $(document).ready(function () {
 
             // OBTENER HOROSCOPO API AZTRO
             aztroApiYesterday;
-            Object.assign(aztroApiYesterday, {"url": process.env.API_HOST + foundSign.aztroYesterday});
+            Object.assign(aztroApiYesterday, {"url": API_HOST + foundSign.aztroYesterday});
             $.ajax(aztroApiYesterday).done(function (response) {
                 console.log(response);
                 $('#yesterdaysHoroscope').append(response.description);
@@ -37,7 +39,7 @@ $(document).ready(function () {
                 $('#yesterdaysLuckyNumber').append(response.lucky_number);
             });
             aztroApiToday;
-            Object.assign(aztroApiToday, {"url": process.env.API_HOST + foundSign.aztroToday});
+            Object.assign(aztroApiToday, {"url": API_HOST + foundSign.aztroToday});
             $.ajax(aztroApiToday).done(function (response) {
                 console.log(response);
                 $('#todaysHoroscope').append(response.description);
@@ -46,7 +48,7 @@ $(document).ready(function () {
                 $('#todaysLuckyNumber').append(response.lucky_number);
             });
             aztroApiTomorrow;
-            Object.assign(aztroApiTomorrow, {"url": process.env.API_HOST + foundSign.aztroTomorrow});
+            Object.assign(aztroApiTomorrow, {"url": API_HOST + foundSign.aztroTomorrow});
             $.ajax(aztroApiTomorrow).done(function (response) {
                 console.log(response);
                 $('#tomorrowsHoroscope').append(response.description);
